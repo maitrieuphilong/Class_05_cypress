@@ -11,7 +11,7 @@ class LoginPage extends BasePage{
     get alertMsg() { return cy.get('#account-login .alert'); }
 
     open() {
-        return super.open(ENDPOINT_PREFIX + routes.LOGIN_ENDPOINT)
+        return super.open(ENDPOINT_PREFIX + routes.LOGIN_ENDPOINT);
     }
 
     openRegistrationPage() {
@@ -21,9 +21,9 @@ class LoginPage extends BasePage{
 
     loginWithUI(email, password) {
         this.open();
-        this.loginInput.type(email)
-        this.passwordInput.type(password)
-        this.loginBtn.click()
+        this.loginInput.type(email);
+        this.passwordInput.type(password);
+        this.loginBtn.click();
     }
 
 }

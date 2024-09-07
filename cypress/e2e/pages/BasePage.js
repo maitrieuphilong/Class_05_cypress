@@ -7,7 +7,7 @@ class BasePage {
     }
 
     open(path) {
-        return cy.visit(path)
+        return cy.visit(path);
     }
 
 }

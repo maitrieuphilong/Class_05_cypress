@@ -8,7 +8,7 @@ export default class HeaderComponent {
     get wishListMenu() { return cy.get('#top-links #wishlist-total'); }
 
     searchProduct(product) {
-        this.searchInput.clear()
+        this.searchInput.clear();
         this.searchInput.type(product);
         this.searchBtn.click();
     }
@@ -19,7 +19,7 @@ export default class HeaderComponent {
     }
 
     openShoppingCart() {
-        this.shoppingCart.click()
+        this.shoppingCart.click();
     }
 
     openWishlist() {

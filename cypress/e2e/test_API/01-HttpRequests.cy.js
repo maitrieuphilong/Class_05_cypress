@@ -21,11 +21,11 @@ describe("HTTP Requests", () => {
 
             const body = response.body;
 
-            expect(body).to.have.property('id')
-            expect(body).to.have.property('userId')
-            expect(body).to.have.property('title')
+            expect(body).to.have.property('id');
+            expect(body).to.have.property('userId');
+            expect(body).to.have.property('title');
 
-            cy.log(body.title)
+            cy.log(body.title);
         })
 
     })
@@ -42,13 +42,13 @@ describe("HTTP Requests", () => {
        })
        .then((response) => {
 
-           expect(response.status).to.equal(201)
+           expect(response.status).to.equal(201);
 
            const body = response.body;
 
-           expect(body).property('userId').to.equal(1)
-           expect(body).property('title').to.equal('Test Post')
-           expect(body).property('body').to.equal('This is post call')
+           expect(body).property('userId').to.equal(1);
+           expect(body).property('title').to.equal('Test Post');
+           expect(body).property('body').to.equal('This is post call');
 
        })
 
@@ -68,13 +68,13 @@ describe("HTTP Requests", () => {
         })
         .then((response) => {
 
-            expect(response.status).to.equal(200)
+            expect(response.status).to.equal(200);
 
             const body = response.body;
 
-            expect(body).property('userId').to.equal(1)
-            expect(body).property('title').to.equal('Test Post updated')
-            expect(body).property('body').to.equal('This is put call')
+            expect(body).property('userId').to.equal(1);
+            expect(body).property('title').to.equal('Test Post updated');
+            expect(body).property('body').to.equal('This is put call');
 
         })
 
@@ -90,8 +90,8 @@ describe("HTTP Requests", () => {
             //Above response is destructured to directly use the response fields
             //https://filiphric.com/using-destructuring-in-cypress
 
-            expect(status).to.equal(200)
-            expect(statusText).to.be.ok
+            expect(status).to.equal(200);
+            expect(statusText).to.be.ok;
 
         })
     

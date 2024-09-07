@@ -30,10 +30,10 @@ describe("Different ways to create Post request Body", () => {
 
            const body = response.body;
 
-           expect(body).property('name').to.equal('Mike')
-           expect(body).property('job').to.equal('engineer')
-           expect(body).to.have.property('createdAt')
-           expect(body).to.have.property('id')
+           expect(body).property('name').to.equal('Mike');
+           expect(body).property('job').to.equal('engineer');
+           expect(body).to.have.property('createdAt');
+           expect(body).to.have.property('id');
 
            cy.log(JSON.stringify(body));
            
@@ -66,10 +66,10 @@ describe("Different ways to create Post request Body", () => {
 
             const body = response.body;
 
-            expect(body).property('name').to.equal(reqBody.name)
-            expect(body).property('job').to.equal(reqBody.job)
-            expect(body).to.have.property('createdAt')
-            expect(body).to.have.property('id')
+            expect(body).property('name').to.equal(reqBody.name);
+            expect(body).property('job').to.equal(reqBody.job);
+            expect(body).to.have.property('createdAt');
+            expect(body).to.have.property('id');
 
             cy.log(JSON.stringify(body));
             
