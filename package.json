@@ -1,0 +1,27 @@
+{
+  "name": "cypress-pom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:open": "npx cypress open",
+    "test:run": "npx cypress run",
+    "test:chrome": "npx cypress run --browser chrome",
+    "test:firefox": "npx cypress run --browser firefox",
+    "test:edge": "npx cypress run --browser edge",
+    "test:local": "npx cypress run --env environmentName=\"local\"",
+    "test:login": "npx cypress run --spec cypress/e2e/tests/LoginTest.cy.js",
+    "test:productData": "npx cypress run --spec cypress/e2e/tests/ProductDataTest.cy.js",
+    "test:regression": "npx cypress run --env grepTags=@regression",
+    "test:api": "npx cypress run --env grepTags=@api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "build cypress auto fw with POM",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.14.2",
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
+}
